@@ -36,8 +36,6 @@ const Navbar = () => {
             <li className='py-6 text-4xl'>Contact</li>
         </ul>
         
-        {/* finished at 23:00 */}
-
         {/* Social icons */}
         <div className='hidden'>
 

@@ -1,9 +1,10 @@
 import React from 'react'
+import {HiArrowNarrowRight} from 'react-icons/hi'
 
 const Home = () => {
   return (
     <div>
-        {/* finished at 23:32 */}
+        {/* finished at 26:18 */}
     </div>
   )
 }

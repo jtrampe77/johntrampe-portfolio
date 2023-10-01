@@ -1,6 +1,8 @@
 import React, {useState} from 'react'
 import Logo from '../assets/logo1.png'
-import {FaBars, FaTimes} from 'react-icons/fa'
+import {FaBars, FaTimes, FaGithub, FaLinkedin} from 'react-icons/fa'
+import { HiOutlineMail } from 'react-icons/hi'
+import {BsFillPersonLinesFill} from 'react-icons/bs'
 
 const Navbar = () => {
     const [nav, setNav] = useState(false)
@@ -37,8 +39,11 @@ const Navbar = () => {
         </ul>
         
         {/* Social icons */}
-        <div className='hidden'>
-
+        <div className='flex fixed flex-col top-[35%] left-0'>
+            <ul>
+                <li><a href="">LinkedIn <FaLinkedin /></a></li>
+                <li><a href="">Github <FaGithub /></a></li>
+            </ul>
         </div>
 
     </div>

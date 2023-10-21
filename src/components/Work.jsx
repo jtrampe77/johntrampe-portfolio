@@ -1,10 +1,10 @@
 import React from 'react'
-import Sneakerheadz from '../assets/sneakerheadz.PNG'
+import Couture from '../assets/couture.PNG'
 import SneakerHeadzReact from '../assets/sneakerheadz-react.PNG'
 import Storefront from '../assets/storefront.PNG'
-import Mifestival from '../assets/mifestival.PNG'
-import MemeGenerator from '../assets/memegenerator.PNG'
-import FinancialTracker from '../assets/financialtracker.PNG'
+import WeatherApp from '../assets/weatherapp.PNG'
+import NetflixImg from '../assets/netflixclone.PNG'
+import QuizGame from '../assets/quizgame.PNG'
 import { motion } from 'framer-motion'
 
 import { useInView } from 'react-intersection-observer'
@@ -55,24 +55,29 @@ const Work = () => {
            <motion.div animate={animation} >
 
         
-            <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-4'>
+            <div className='grid sm:grid-cols-2  gap-4'>
               
                {/* Card Item */}
-                <div style={{backgroundImage:`url(${Sneakerheadz})`}}
-                 className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'>
+               <div style={{backgroundImage:`url(${Storefront})`}}
+                                className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'>
                     
                     {/* Hover Effects */}
                     <div className='opacity-0 group-hover:opacity-100'>
                         <span className='text-2xl font-bold text-white tracking-wider'>
-                            Vanilla JS
+                            Sneakerheadz
                         </span>
 
+                        <span className='flex flex-col'>
+                            <span>React JS, Stripe</span>                           
+                        </span>
+                                
+
                         <div className='pt-8 text-center'>
-                            <a href="https://sneakerheadz.netlify.app/" target="_blank" rel="noreferrer">
-                                <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg hover:bg-pink-600 hover:text-white'>Demo</button>
+                            <a href="https://storefront-nextjs.vercel.app/" target="_blank" rel="noreferrer">
+                                <button className='text-center rounded-lg px-4 py-3  m-2 bg-white text-gray-700 font-bold text-lg hover:bg-pink-600 hover:text-white'>Demo</button>
                             </a>
-                            <a href="https://github.com/jtrampe77/sneakerheadz" target="_blank" rel="noreferrer">
-                                <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg hover:bg-pink-600 hover:text-white'>Code</button>
+                            <a href="https://github.com/jtrampe77/storefront-nextjs" target="_blank" rel="noreferrer">
+                                <button className='text-center rounded-lg px-4 py-3  m-2 bg-white text-gray-700 font-bold text-lg hover:bg-pink-600 hover:text-white'>Code</button>
                             </a>
                         </div>
                     </div>
@@ -87,15 +92,16 @@ const Work = () => {
                     <div className='opacity-0 group-hover:opacity-100'>
                         <div className='flex flex-col justify-center items-center'>
                             <span className='text-2xl font-bold text-white tracking-wider'>
-                                React JS /Next JS
+                                 Dashboard
+                            </span>
+                            <span className='flex flex-col'>
+                                <span>React JS, Next JS</span>                           
                             </span>
 
                             <span className='tracking-wider px-2 pt-4 text-xs'>
-                                <span className='flex flex-col'>
-                                    <span className='text-center pb-2'>Login to view</span>
+                                <span className='flex flex-col'>   
                                     <span>Username: jim@home.com</span>
-                                    <span>Password: 123456</span>
-                           
+                                    <span>Password: 123456</span>   
                                 </span>
                                 
                             </span>
@@ -112,21 +118,26 @@ const Work = () => {
                     </div>
                 </div>
 
-                {/* Card Item */}
-                <div style={{backgroundImage:`url(${Storefront})`}}
+                
+
+                 {/* Card Item */}
+                 <div style={{backgroundImage:`url(${WeatherApp})`}}
                                 className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'>
                     
                     {/* Hover Effects */}
                     <div className='opacity-0 group-hover:opacity-100'>
                         <span className='text-2xl font-bold text-white tracking-wider'>
-                            React JS / Stripe
+                            Weather App
+                        </span>
+                        <span className='flex flex-col'>
+                            <span>JavaScript, HTML, CSS</span>                           
                         </span>
 
                         <div className='pt-8 text-center'>
-                            <a href="https://storefront-nextjs.vercel.app/" target="_blank" rel="noreferrer">
+                            <a href="https://weather-app-jtrampe.netlify.app/" target="_blank" rel="noreferrer">
                                 <button className='text-center rounded-lg px-4 py-3  m-2 bg-white text-gray-700 font-bold text-lg hover:bg-pink-600 hover:text-white'>Demo</button>
                             </a>
-                            <a href="https://github.com/jtrampe77/storefront-nextjs" target="_blank" rel="noreferrer">
+                            <a href="https://github.com/jtrampe77/weather-app" target="_blank" rel="noreferrer">
                                 <button className='text-center rounded-lg px-4 py-3  m-2 bg-white text-gray-700 font-bold text-lg hover:bg-pink-600 hover:text-white'>Code</button>
                             </a>
                         </div>
@@ -134,41 +145,23 @@ const Work = () => {
                 </div>
 
                  {/* Card Item */}
-                 <div style={{backgroundImage:`url(${Mifestival})`}}
+                 <div style={{backgroundImage:`url(${NetflixImg})`}}
                                 className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'>
                     
                     {/* Hover Effects */}
                     <div className='opacity-0 group-hover:opacity-100'>
                         <span className='text-2xl font-bold text-white tracking-wider'>
-                            HTML / CSS
+                            Netflix Clone
+                        </span>
+                        <span className='flex flex-col'>
+                            <span>HTML, CSS</span>                           
                         </span>
 
                         <div className='pt-8 text-center'>
-                            <a href="https://mifestival-htmlcss.netlify.app/" target="_blank" rel="noreferrer">
+                            <a href="https://netflix-clone-jtrampe.netlify.app/" target="_blank" rel="noreferrer">
                                 <button className='text-center rounded-lg px-4 py-3  m-2 bg-white text-gray-700 font-bold text-lg hover:bg-pink-600 hover:text-white'>Demo</button>
                             </a>
-                            <a href="https://github.com/jtrampe77/mifestival" target="_blank" rel="noreferrer">
-                                <button className='text-center rounded-lg px-4 py-3  m-2 bg-white text-gray-700 font-bold text-lg hover:bg-pink-600 hover:text-white'>Code</button>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                 {/* Card Item */}
-                 <div style={{backgroundImage:`url(${MemeGenerator})`}}
-                                className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'>
-                    
-                    {/* Hover Effects */}
-                    <div className='opacity-0 group-hover:opacity-100'>
-                        <span className='text-2xl font-bold text-white tracking-wider'>
-                            JavaScript
-                        </span>
-
-                        <div className='pt-8 text-center'>
-                            <a href="https://js-meme-generator.netlify.app/" target="_blank" rel="noreferrer">
-                                <button className='text-center rounded-lg px-4 py-3  m-2 bg-white text-gray-700 font-bold text-lg hover:bg-pink-600 hover:text-white'>Demo</button>
-                            </a>
-                            <a href="https://github.com/jtrampe77/meme-generator" target="_blank" rel="noreferrer">
+                            <a href="https://github.com/jtrampe77/clone-netflix" target="_blank" rel="noreferrer">
                                 <button className='text-center rounded-lg px-4 py-3  m-2 bg-white text-gray-700 font-bold text-lg hover:bg-pink-600 hover:text-white'>Code</button>
                             </a>
                         </div>
@@ -176,20 +169,47 @@ const Work = () => {
                 </div>
 
                    {/* Card Item */}
-                   <div style={{backgroundImage:`url(${FinancialTracker})`}}
+                   <div style={{backgroundImage:`url(${QuizGame})`}}
                                 className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'>
                     
                     {/* Hover Effects */}
                     <div className='opacity-0 group-hover:opacity-100'>
                         <span className='text-2xl font-bold text-white tracking-wider'>
-                            JavaScript
+                            Quiz Game
+                        </span>
+                        <span className='flex flex-col'>
+                            <span>Javascript, HTML, CSS</span>                           
                         </span>
 
                         <div className='pt-8 text-center'>
-                            <a href="https://js-financial-tracker.netlify.app/" target="_blank" rel="noreferrer">
+                            <a href="https://geography-quiz-game.netlify.app/" target="_blank" rel="noreferrer">
                                 <button className='text-center rounded-lg px-4 py-3  m-2 bg-white text-gray-700 font-bold text-lg hover:bg-pink-600 hover:text-white'>Demo</button>
                             </a>
-                            <a href="https://github.com/jtrampe77/financial-tracker" target="_blank" rel="noreferrer">
+                            <a href="https://github.com/jtrampe77/quizGame" target="_blank" rel="noreferrer">
+                                <button className='text-center rounded-lg px-4 py-3  m-2 bg-white text-gray-700 font-bold text-lg hover:bg-pink-600 hover:text-white'>Code</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                {/* Card Item */}
+                <div style={{backgroundImage:`url(${Couture})`}}
+                                className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'>
+                    
+                    {/* Hover Effects */}
+                    <div className='opacity-0 group-hover:opacity-100'>
+                        <span className='text-2xl font-bold text-white tracking-wider'>
+                            Couture eCommerce
+                        </span>
+                        <span className='flex flex-col'>
+                            <span>HTML, CSS</span>                           
+                        </span>
+
+                        <div className='pt-8 text-center'>
+                            <a href="https://couture-shop.netlify.app/" target="_blank" rel="noreferrer">
+                                <button className='text-center rounded-lg px-4 py-3  m-2 bg-white text-gray-700 font-bold text-lg hover:bg-pink-600 hover:text-white'>Demo</button>
+                            </a>
+                            <a href="https://github.com/jtrampe77/couture" target="_blank" rel="noreferrer">
                                 <button className='text-center rounded-lg px-4 py-3  m-2 bg-white text-gray-700 font-bold text-lg hover:bg-pink-600 hover:text-white'>Code</button>
                             </a>
                         </div>

@@ -38,7 +38,7 @@ const Contact = () => {
             <div className='pb-8'>
                 <p className='text-2xl md:text-4xl font-bold inline border-b-2 border-pink-600 text-gray-300'>Contact</p>
                 <p className='py-4 text-gray-300'>Send me a message if you are interested to work together</p>
-                <p className='text-pink-600'>Or contact me directly: +1-(780)-399-0143 / johntrampe07@gmail.com</p>
+                <p className='text-pink-600'>Or contact me directly: +1-780-399-0143 / johntrampe07@gmail.com</p>
             </div>
             
             <motion.input className='bg-[#ccd6f6] p-2' type="text" placeholder='Name' name='name' animate={animation}/>

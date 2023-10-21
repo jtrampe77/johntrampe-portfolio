@@ -14,6 +14,7 @@ function App() {
       <Skills />
       <Work />
       <Contact />
+      <p className="w-full bg-[#0a192f] text-gray-300 p-8 text-center border-t-2 border-gray-700 italic text-xs">Created using React, Tailwind CSS, and Framer Motion</p>
     </div>
   );
 }
